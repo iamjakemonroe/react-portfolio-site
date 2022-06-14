@@ -1,0 +1,133 @@
+.contact_cont {
+  padding-top: 6rem;
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact__head-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+  // box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 15px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 1.3rem;
+  }
+}
+//
+
+.contact_subject {
+  text-align: left;
+}
+.contact_app__header-badge {
+  width: 100%;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact_tag-cmp {
+    width: 50%;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem 0rem 0rem;
+    border: var(--white-color);
+    border-radius: 15px;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 900px) {
+      width: 70%;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}
+//
+.app__contact-container {
+  display: flex;
+  padding: 0rem 5vw 0vw 5vw;
+  position: relative;
+  top: -10rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  //   margin-top: 2rem;
+  @media screen and (max-width: 900px) {
+    align-items: center;
+    top: 0;
+  }
+  @media screen and (width: 912px) {
+    align-items: center;
+    top: -25rem;
+  }
+}
+
+.app__form {
+  width: 60%;
+  //   padding-top: 2rem;
+  padding-right: 5rem;
+  flex-direction: column;
+  margin: 1rem 2rem;
+
+  @media screen and (max-width: 900px) {
+    width: 70%;
+    padding-right: 0rem;
+  }
+
+  div {
+    width: 100%;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    // background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.95rem;
+      border: none;
+      border-radius: 7px;
+      background-color: var(--primary-color);
+
+      color: var(--black-color);
+      outline: none;
+
+      &:hover {
+        box-shadow: 0 0 15px var(--primary-color);
+      }
+    }
+    input {
+      font-size: 13px;
+      font-family: inherit;
+    }
+
+    textarea {
+      height: 170px;
+    }
+  }
+}
+button {
+  padding: 1rem 2rem;
+  font-family: inherit;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 2rem 0 0 0;
+}

@@ -1,0 +1,95 @@
+.skills__cointainer {
+  padding-top: 8rem;
+  background-color: rgb(248, 248, 248);
+}
+
+.skills__head-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 1.3rem;
+  }
+}
+.app__work-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0 3rem 0;
+
+  .app__work-filter-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(168, 168, 168, 0.15);
+    border: 1px solid rgba(168, 168, 168, 0.15);
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: var(--gray-color);
+      color: #fff;
+    }
+  }
+  .item-active {
+    background-color: var(--gray-color);
+    color: #fff;
+  }
+}
+
+.app__skills-container {
+  padding: 0rem 0rem 4rem 0rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.skills-item {
+  padding: 2rem;
+}
+.skills-name {
+  padding-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.skills-img {
+  padding: 0.8rem;
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(168, 168, 168, 0.15);
+}
+.skills-img2 {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(168, 168, 168, 0.15);
+}
+
+//animation: skills-img-spin infinite 12s linear;
+
+// @keyframes skills-img-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

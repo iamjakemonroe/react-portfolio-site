@@ -1,0 +1,27 @@
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.footer-icons {
+  padding: 2rem 1rem 1rem 1rem;
+
+  @media screen and (max-width: 800px) {
+    padding: 2rem 0.5rem 0.2rem 0.5rem;
+  }
+}
+.icons {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem;
+  margin: 0.8rem;
+  color: rgb(35, 35, 35);
+
+  &:hover {
+    animation: rubberBand 0.8s;
+    cursor: pointer;
+    color: #000;
+  }
+}
